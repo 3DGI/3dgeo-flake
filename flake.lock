@@ -1,0 +1,117 @@
+{
+  "nodes": {
+    "cjio-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1746811743,
+        "narHash": "sha256-gkHV0JjCFZCp3BF0hCXCR18/muOIdhEJBZMmsMSR4GQ=",
+        "owner": "cityjson",
+        "repo": "cjio",
+        "rev": "35728539127f71b1d5ae458169ff84050e5e20ad",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cityjson",
+        "ref": "v0.10.1",
+        "repo": "cjio",
+        "type": "github"
+      }
+    },
+    "cjseq-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1718618308,
+        "narHash": "sha256-jR1RSo4heyaA8DMzHfS6HzRU/BphVpc3h82GfSxiDN4=",
+        "owner": "cityjson",
+        "repo": "cjseq",
+        "rev": "e428985ff17497cb882e60a0f42ade8c2d496a75",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cityjson",
+        "ref": "0.3.1",
+        "repo": "cjseq",
+        "type": "github"
+      }
+    },
+    "cjval-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1766584510,
+        "narHash": "sha256-nE3U/9Vo8DFZn2NkvTyLIuXgi7vD+Vj5NPqaydBqTkg=",
+        "owner": "cityjson",
+        "repo": "cjval",
+        "rev": "9d9fb6fb6e15ffcbf6f9ad07ce8532e18f6f9515",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cityjson",
+        "ref": "0.8.4",
+        "repo": "cjval",
+        "type": "github"
+      }
+    },
+    "flatcitybuf-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1771103249,
+        "narHash": "sha256-1SLahSmSPsOyl2HUhCll4WWgeL81s1bFNBS/b2n1W20=",
+        "owner": "cityjson",
+        "repo": "flatcitybuf",
+        "rev": "b35f634c69200e6e64f5c0211980689e26a4006a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cityjson",
+        "ref": "v0.7.4",
+        "repo": "flatcitybuf",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1772585379,
+        "narHash": "sha256-zomLtA51H/qXAcjczveQFXPi/GuJUkPdpDeyu5bGI4M=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "0fd2db475afdde93c9e4b1625aafb8eb41b99807",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "cjio-src": "cjio-src",
+        "cjseq-src": "cjseq-src",
+        "cjval-src": "cjval-src",
+        "flatcitybuf-src": "flatcitybuf-src",
+        "nixpkgs": "nixpkgs",
+        "val3dity-src": "val3dity-src"
+      }
+    },
+    "val3dity-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1767802172,
+        "narHash": "sha256-upAcdeAYwOzxZMCklzWcnSWZjESOxYYSjpAC0SPc/V0=",
+        "owner": "tudelft3d",
+        "repo": "val3dity",
+        "rev": "d1a7750f17aeed337e941c4e2937fc4773862440",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tudelft3d",
+        "ref": "2.6.0",
+        "repo": "val3dity",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
