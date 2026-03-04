@@ -118,6 +118,18 @@
         {
           default = pkgs.mkShell {
             packages = builtins.attrValues p;
+
+            shellHook = ''
+              echo ""
+              echo "3dgeo dev shell"
+              echo "---------------"
+              echo "$(cjio --version 2>&1 | head -1)"
+              echo "$(cjseq --version 2>&1 | head -1)"
+              echo "$(cjval --version 2>&1 | head -1)"
+              echo "$(fcb --version 2>&1 | head -1)"
+              echo "$(val3dity --version 2>&1 | grep -v '^[[:space:]]*$' | head -1)"
+              echo ""
+            '';
           };
         });
     };
