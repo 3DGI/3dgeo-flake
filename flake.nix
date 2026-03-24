@@ -84,6 +84,12 @@
           cjval = pkgs.rustPlatform.buildRustPackage {
             pname = "cjval";
             version = "0.8.4";
+            nativeBuildInputs = with pkgs; [
+              pkg-config
+            ];
+            buildInputs = with pkgs; [
+              openssl
+            ];
             src = cjval-src;
             cargoLock.lockFile = ./cjval-Cargo.lock;
             postPatch = ''
