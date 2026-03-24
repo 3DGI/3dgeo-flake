@@ -96,6 +96,12 @@
           flatcitybuf = pkgs.rustPlatform.buildRustPackage {
             pname = "flatcitybuf";
             version = "0.7.4";
+            nativeBuildInputs = with pkgs; [
+              pkg-config
+            ];
+            buildInputs = with pkgs; [
+              openssl
+            ];
             src = flatcitybuf-src;
             sourceRoot = "source/src/rust";
             cargoLock.lockFile = ./flatcitybuf-Cargo.lock;
