@@ -25,7 +25,7 @@ Add individual tools like:
 ```sh
 nix profile add --refresh github:3DGI/3dgeo-flake#packages.x86_64-linux.flatcitybuf
 ```
-Where the last part (<platform>.<package>) is one of:
+Where the last part (`<sytem>`.`<package>`) is one of:
 
 ```
 └───packages
