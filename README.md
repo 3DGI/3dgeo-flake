@@ -20,6 +20,41 @@ nix develop github:3DGI/3dgeo-flake
 
 Or add a `shell.nix` / `flake.nix` to your project (see below).
 
+## Add to your nix profile
+Add individual tools like:
+```sh
+nix profile add --refresh github:3DGI/3dgeo-flake#packages.x86_64-linux.flatcitybuf
+```
+Where the last part (<platform>.<package>) is one of:
+
+```
+└───packages
+    ├───aarch64-darwin
+    │   ├───cjio: package 'python3.13-cjio-0.10.1'
+    │   ├───cjseq: package 'cjseq-0.3.1'
+    │   ├───cjval: package 'cjval-0.8.4'
+    │   ├───flatcitybuf: package 'flatcitybuf-0.7.4'
+    │   └───val3dity: package 'val3dity-2.6.3'
+    ├───aarch64-linux
+    │   ├───cjio: package 'python3.13-cjio-0.10.1'
+    │   ├───cjseq: package 'cjseq-0.3.1'
+    │   ├───cjval: package 'cjval-0.8.4'
+    │   ├───flatcitybuf: package 'flatcitybuf-0.7.4'
+    │   └───val3dity: package 'val3dity-2.6.3'
+    ├───x86_64-darwin
+    │   ├───cjio: package 'python3.13-cjio-0.10.1'
+    │   ├───cjseq: package 'cjseq-0.3.1'
+    │   ├───cjval: package 'cjval-0.8.4'
+    │   ├───flatcitybuf: package 'flatcitybuf-0.7.4'
+    │   └───val3dity: package 'val3dity-2.6.3'
+    └───x86_64-linux
+        ├───cjio: package 'python3.13-cjio-0.10.1'
+        ├───cjseq: package 'cjseq-0.3.1'
+        ├───cjval: package 'cjval-0.8.4'
+        ├───flatcitybuf: package 'flatcitybuf-0.7.4'
+        └───val3dity: package 'val3dity-2.6.3'
+```
+
 ## Build a single tool
 
 ```sh
