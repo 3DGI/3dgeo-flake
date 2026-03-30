@@ -84,6 +84,12 @@
           cjval = pkgs.rustPlatform.buildRustPackage {
             pname = "cjval";
             version = "0.9.0";
+            nativeBuildInputs = with pkgs; [
+              pkg-config
+            ];
+            buildInputs = with pkgs; [
+              openssl
+            ];
             src = cjval-src;
             cargoLock.lockFile = ./cjval-Cargo.lock;
             postPatch = ''
@@ -96,6 +102,12 @@
           flatcitybuf = pkgs.rustPlatform.buildRustPackage {
             pname = "flatcitybuf";
             version = "0.7.4";
+            nativeBuildInputs = with pkgs; [
+              pkg-config
+            ];
+            buildInputs = with pkgs; [
+              openssl
+            ];
             src = flatcitybuf-src;
             sourceRoot = "source/src/rust";
             cargoLock.lockFile = ./flatcitybuf-Cargo.lock;
