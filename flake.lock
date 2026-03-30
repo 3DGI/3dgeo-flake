@@ -37,16 +37,16 @@
     "cjval-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1766584510,
-        "narHash": "sha256-nE3U/9Vo8DFZn2NkvTyLIuXgi7vD+Vj5NPqaydBqTkg=",
+        "lastModified": 1774608548,
+        "narHash": "sha256-O+vZQgUPVQJIBhkkT2w153zL6zSXmDoljfA657IChQ4=",
         "owner": "cityjson",
         "repo": "cjval",
-        "rev": "9d9fb6fb6e15ffcbf6f9ad07ce8532e18f6f9515",
+        "rev": "c83095978da1610ecef4329b154605d53f4bf764",
         "type": "github"
       },
       "original": {
         "owner": "cityjson",
-        "ref": "0.8.4",
+        "ref": "0.9.0",
         "repo": "cjval",
         "type": "github"
       }

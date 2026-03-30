@@ -20,7 +20,7 @@
     };
 
     cjval-src = {
-      url = "github:cityjson/cjval/0.8.4";
+      url = "github:cityjson/cjval/0.9.0";
       flake = false;
     };
 
@@ -83,7 +83,7 @@
 
           cjval = pkgs.rustPlatform.buildRustPackage {
             pname = "cjval";
-            version = "0.8.4";
+            version = "0.9.0";
             src = cjval-src;
             cargoLock.lockFile = ./cjval-Cargo.lock;
             postPatch = ''
