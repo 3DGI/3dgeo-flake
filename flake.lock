@@ -97,17 +97,17 @@
     "val3dity-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1767802172,
-        "narHash": "sha256-upAcdeAYwOzxZMCklzWcnSWZjESOxYYSjpAC0SPc/V0=",
+        "lastModified": 1782482109,
+        "narHash": "sha256-mccSQ6cUYZz1dAc17SgOXY9PQVogA3aRxFm9VQlCg4c=",
         "owner": "tudelft3d",
         "repo": "val3dity",
-        "rev": "d1a7750f17aeed337e941c4e2937fc4773862440",
+        "rev": "d5f9a576f888f10bcee45e4729c4d47dc53f9986",
         "type": "github"
       },
       "original": {
         "owner": "tudelft3d",
-        "ref": "2.6.0",
         "repo": "val3dity",
+        "rev": "d5f9a576f888f10bcee45e4729c4d47dc53f9986",
         "type": "github"
       }
     }

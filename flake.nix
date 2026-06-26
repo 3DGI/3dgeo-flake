@@ -5,7 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
     val3dity-src = {
-      url = "github:tudelft3d/val3dity/2.6.0";
+      url = "github:tudelft3d/val3dity/d5f9a576f888f10bcee45e4729c4d47dc53f9986";
       flake = false;
     };
 
