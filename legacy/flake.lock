@@ -1,0 +1,68 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1781607440,
+        "narHash": "sha256-rxO+uc/KFbSJp+pgyXRuAX6QlG9hJdnt0BXpEQRXY+U=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "3e41b24abd260e8f71dbe2f5737d24122f972158",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "tyler-multiformat-src": "tyler-multiformat-src",
+        "tyler-src": "tyler-src"
+      }
+    },
+    "tyler-multiformat-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1761150758,
+        "narHash": "sha256-StgLdS4JGU5fr9FQbwxcFKjajhUzHXg2zreGTyRoMG8=",
+        "ref": "multi-format-output",
+        "rev": "e7b5e6d699f1b8b1652181b8d0332d862cadc14a",
+        "revCount": 278,
+        "submodules": true,
+        "type": "git",
+        "url": "https://github.com/3DGI/tyler"
+      },
+      "original": {
+        "ref": "multi-format-output",
+        "rev": "e7b5e6d699f1b8b1652181b8d0332d862cadc14a",
+        "submodules": true,
+        "type": "git",
+        "url": "https://github.com/3DGI/tyler"
+      }
+    },
+    "tyler-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1761131734,
+        "narHash": "sha256-eRqQq4fDLU2f9by3j8gPMC7InHgeuXwdjXaFWcowb7Y=",
+        "ref": "refs/heads/master",
+        "rev": "9085570d7e9ca4e15c1cdcc7b46ac7d01524d0f1",
+        "revCount": 355,
+        "submodules": true,
+        "type": "git",
+        "url": "https://github.com/3DGI/tyler"
+      },
+      "original": {
+        "rev": "9085570d7e9ca4e15c1cdcc7b46ac7d01524d0f1",
+        "submodules": true,
+        "type": "git",
+        "url": "https://github.com/3DGI/tyler"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
