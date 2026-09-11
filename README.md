@@ -34,25 +34,25 @@ Where the last part (`<sytem>`.`<package>`) is one of:
     │   ├───cjseq: package 'cjseq-0.3.1'
     │   ├───cjval: package 'cjval-0.8.4'
     │   ├───flatcitybuf: package 'flatcitybuf-0.7.4'
-    │   └───val3dity: package 'val3dity-2.6.3'
+    │   └───val3dity: package 'val3dity-2.7.0'
     ├───aarch64-linux
     │   ├───cjio: package 'python3.13-cjio-0.10.1'
     │   ├───cjseq: package 'cjseq-0.3.1'
     │   ├───cjval: package 'cjval-0.8.4'
     │   ├───flatcitybuf: package 'flatcitybuf-0.7.4'
-    │   └───val3dity: package 'val3dity-2.6.3'
+    │   └───val3dity: package 'val3dity-2.7.0'
     ├───x86_64-darwin
     │   ├───cjio: package 'python3.13-cjio-0.10.1'
     │   ├───cjseq: package 'cjseq-0.3.1'
     │   ├───cjval: package 'cjval-0.8.4'
     │   ├───flatcitybuf: package 'flatcitybuf-0.7.4'
-    │   └───val3dity: package 'val3dity-2.6.3'
+    │   └───val3dity: package 'val3dity-2.7.0'
     └───x86_64-linux
         ├───cjio: package 'python3.13-cjio-0.10.1'
         ├───cjseq: package 'cjseq-0.3.1'
         ├───cjval: package 'cjval-0.8.4'
         ├───flatcitybuf: package 'flatcitybuf-0.7.4'
-        └───val3dity: package 'val3dity-2.6.3'
+        └───val3dity: package 'val3dity-2.7.0'
 ```
 
 ## Build a single tool

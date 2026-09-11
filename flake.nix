@@ -4,9 +4,9 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
-    val3dity-src = {
-      url = "github:tudelft3d/val3dity/d5f9a576f888f10bcee45e4729c4d47dc53f9986";
-      flake = false;
+    val3dity = {
+      url = "github:tudelft3d/val3dity/4e1f684";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     cjseq-src = {
@@ -30,7 +30,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, val3dity-src, cjseq-src, cjio-src, cjval-src, flatcitybuf-src }:
+  outputs = { self, nixpkgs, val3dity, cjseq-src, cjio-src, cjval-src, flatcitybuf-src }:
     let
       supportedSystems = [ "x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin" ];
       forAllSystems = nixpkgs.lib.genAttrs supportedSystems;
@@ -40,24 +40,7 @@
           pkgs = nixpkgs.legacyPackages.${system};
         in
         {
-          val3dity = pkgs.stdenv.mkDerivation {
-            pname = "val3dity";
-            version = "2.6.3";
-            src = val3dity-src;
-
-            nativeBuildInputs = with pkgs; [ cmake ninja ];
-            buildInputs = with pkgs; [
-              cgal gmp mpfr eigen
-              geos
-              spdlog
-              pugixml
-              tclap
-              boost
-              nlohmann_json
-            ];
-
-            cmakeFlags = [ "-DVAL3DITY_USE_INTERNAL_DEPS=OFF" "-G Ninja" ];
-          };
+          val3dity = val3dity.packages.${system}.default;
 
           cjseq = pkgs.rustPlatform.buildRustPackage {
             pname = "cjseq";

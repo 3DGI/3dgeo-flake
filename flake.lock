@@ -91,23 +91,27 @@
         "cjval-src": "cjval-src",
         "flatcitybuf-src": "flatcitybuf-src",
         "nixpkgs": "nixpkgs",
-        "val3dity-src": "val3dity-src"
+        "val3dity": "val3dity"
       }
     },
-    "val3dity-src": {
-      "flake": false,
+    "val3dity": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
       "locked": {
-        "lastModified": 1782482109,
-        "narHash": "sha256-mccSQ6cUYZz1dAc17SgOXY9PQVogA3aRxFm9VQlCg4c=",
+        "lastModified": 1787689276,
+        "narHash": "sha256-T1aPWx5y4CtXgyR/720pTRNsY9Fw+IzKydgGG6oGKQU=",
         "owner": "tudelft3d",
         "repo": "val3dity",
-        "rev": "d5f9a576f888f10bcee45e4729c4d47dc53f9986",
+        "rev": "4e1f6843d3246bc15e667e220ccba375ad564f07",
         "type": "github"
       },
       "original": {
         "owner": "tudelft3d",
+        "ref": "4e1f684",
         "repo": "val3dity",
-        "rev": "d5f9a576f888f10bcee45e4729c4d47dc53f9986",
         "type": "github"
       }
     }
